@@ -1,0 +1,164 @@
+/* Âm Lịch Today — GNOME Shell Extension Stylesheet */
+
+/* ── Panel label ── */
+.amlich-panel-label {
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+/* ── Popup content area ── */
+.amlich-content {
+  padding: 8px 4px;
+  spacing: 0;
+  min-width: 700px;
+}
+
+/* ── Header ── */
+.amlich-header {
+  font-size: 12px;
+  font-weight: bold;
+  color: #DAA520;
+  text-align: center;
+}
+
+/* ── Left column ── */
+.amlich-left-col {
+  padding: 4px 10px;
+  spacing: 2px;
+  min-width: 380px;
+}
+
+/* ── Right column ── */
+.amlich-right-col {
+  padding: 4px 10px;
+  spacing: 4px;
+  min-width: 250px;
+}
+
+/* ── Vertical separator ── */
+.amlich-vsep {
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.15);
+  margin: 4px 8px;
+}
+
+/* ── Horizontal separator ── */
+.amlich-hsep {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.12);
+  margin: 6px 0;
+}
+
+/* ── Day box (top of left column) ── */
+.amlich-day-box {
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.amlich-lunar-day {
+  font-size: 48px;
+  font-weight: bold;
+  color: #DC143C;
+  text-align: center;
+}
+
+.amlich-canchi {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+.amlich-canchi-sub {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+/* ── Rating badges ── */
+.amlich-rating {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.amlich-rating-great { color: #22c55e; }
+.amlich-rating-good { color: #3b82f6; }
+.amlich-rating-average { color: #f59e0b; }
+.amlich-rating-bad { color: #ef4444; }
+
+.amlich-rating-small {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+/* ── Holiday ── */
+.amlich-holiday {
+  font-size: 12px;
+  font-weight: bold;
+  color: #DC143C;
+  text-align: center;
+  margin-top: 2px;
+}
+
+/* ── Section title ── */
+.amlich-section-title {
+  font-size: 11px;
+  font-weight: bold;
+  color: #DAA520;
+  margin-top: 2px;
+}
+
+/* ── Section content ── */
+.amlich-section-content {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2px;
+}
+
+/* ── Dim text ── */
+.amlich-dim {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+/* ── Good days list ── */
+.amlich-good-day-row {
+  spacing: 8px;
+  padding: 3px 0;
+}
+
+.amlich-day-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  color: #ffffff;
+}
+
+.amlich-day-badge-today {
+  background-color: #DC143C;
+  border: none;
+  color: #ffffff;
+}
+
+.amlich-good-day-canchi {
+  font-size: 11px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* ── Footer ── */
+.amlich-footer {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}

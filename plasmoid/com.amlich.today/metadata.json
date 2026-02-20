@@ -1,0 +1,21 @@
+{
+    "KPackageStructure": "Plasma/Applet",
+    "KPlugin": {
+        "Id": "com.amlich.today",
+        "Name": "Âm Lịch Hôm Nay",
+        "Description": "Widget lịch âm Việt Nam — Ngày tốt xấu, giờ hoàng đạo, can chi, phong thủy",
+        "Icon": "preferences-system-time",
+        "Authors": [
+            {
+                "Name": "Đạt Vũ",
+                "Email": "contact@amlich.today"
+            }
+        ],
+        "Category": "Date and Time",
+        "EnabledByDefault": true,
+        "License": "MIT",
+        "Version": "2.0.0",
+        "Website": "https://amlich.today"
+    },
+    "X-Plasma-API-Minimum-Version": "6.0"
+}

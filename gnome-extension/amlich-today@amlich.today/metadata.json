@@ -1,0 +1,8 @@
+{
+  "uuid": "amlich-today@amlich.today",
+  "name": "Âm Lịch Today",
+  "description": "Lịch Âm Việt Nam — Xem ngày tốt xấu, giờ hoàng đạo, hướng xuất hành, lục diệu, sao 28, trực, ngày đẹp trong tháng. Dữ liệu từ amlich.today",
+  "version": 1,
+  "shell-version": ["48"],
+  "url": "https://amlich.today"
+}

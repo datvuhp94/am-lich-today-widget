@@ -166,7 +166,7 @@ PlasmoidItem {
                     spacing: 0
                     PlasmaComponents.Label { Layout.alignment: Qt.AlignHCenter; text: "Lục Diệu"; font.pixelSize: 11; opacity: 0.4 }
                     PlasmaComponents.Label { Layout.alignment: Qt.AlignHCenter; text: lunarData ? lunarData.lucDieu.name : ""; font.pixelSize: 13; font.bold: true }
-                    PlasmaComponents.Label { Layout.alignment: Qt.AlignHCenter; text: lunarData && lunarData.lucDieu.type ? lunarData.lucDieu.type : ""; font.pixelSize: 11; color: lunarData && lunarData.lucDieu.type === "Tốt" ? greenColor : (lunarData && lunarData.lucDieu.type === "Xấu" ? redColor : yellowColor) }
+                    PlasmaComponents.Label { Layout.alignment: Qt.AlignHCenter; text: lunarData && lunarData.lucDieu.rating ? lunarData.lucDieu.rating : ""; font.pixelSize: 11; color: lunarData && lunarData.lucDieu.rating === "Tốt" ? greenColor : (lunarData && lunarData.lucDieu.rating === "Xấu" ? redColor : yellowColor) }
                 }
                 Rectangle { Layout.preferredHeight: Kirigami.Units.gridUnit * 2.5; width: 1; color: separatorColor }
                 ColumnLayout {
@@ -229,7 +229,7 @@ PlasmoidItem {
             Rectangle { Layout.fillWidth: true; height: 1; color: separatorColor; Layout.topMargin: 3 }
 
             PlasmaComponents.Label { text: "Lục Diệu — " + (lunarData ? lunarData.lucDieu.name : ""); font.pixelSize: 11; font.bold: true; color: goldColor; Layout.topMargin: 3 }
-            PlasmaComponents.Label { Layout.fillWidth: true; text: lunarData && lunarData.lucDieu.meaning ? lunarData.lucDieu.meaning : ""; font.pixelSize: 10; wrapMode: Text.Wrap; opacity: 0.8 }
+            PlasmaComponents.Label { Layout.fillWidth: true; text: lunarData && lunarData.lucDieu.advice ? lunarData.lucDieu.advice : ""; font.pixelSize: 10; wrapMode: Text.Wrap; opacity: 0.8 }
 
             Rectangle { Layout.fillWidth: true; height: 1; color: separatorColor; Layout.topMargin: 3 }
 
@@ -247,7 +247,6 @@ PlasmoidItem {
             Rectangle { Layout.fillWidth: true; height: 1; color: separatorColor; Layout.topMargin: 3 }
 
             PlasmaComponents.Label { text: "Trực " + (lunarData ? lunarData.kienTru.name : ""); font.pixelSize: 11; font.bold: true; color: goldColor; Layout.topMargin: 3 }
-            PlasmaComponents.Label { Layout.fillWidth: true; visible: !!(lunarData && lunarData.kienTru.meaning); text: lunarData ? (lunarData.kienTru.meaning || "") : ""; font.pixelSize: 10; wrapMode: Text.Wrap; opacity: 0.8 }
             RowLayout { spacing: 4
                 PlasmaComponents.Label { text: "Nên:"; font.pixelSize: 10; font.bold: true; color: greenColor }
                 PlasmaComponents.Label { Layout.fillWidth: true; text: lunarData && lunarData.kienTru.nenLam ? lunarData.kienTru.nenLam : "—"; font.pixelSize: 10; wrapMode: Text.Wrap }

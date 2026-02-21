@@ -165,7 +165,7 @@ class AmLichIndicator extends PanelMenu.Button {
 
     // Info tóm tắt
     const infoText = [
-      `Lục Diệu: ${d.lucDieu.name} (${d.lucDieu.type || 'Bình'})`,
+      `Lục Diệu: ${d.lucDieu.name} (${d.lucDieu.rating || 'Bình'})`,
       `Trực: ${d.kienTru.name}`,
       `Sao: ${d.sao28.name} (${d.sao28.attribute})`,
     ];
@@ -176,8 +176,8 @@ class AmLichIndicator extends PanelMenu.Button {
     this._addSection(this._leftCol, 'Chi Tiết 12 Giờ', this._formatAllHours());
 
     // Lục Diệu
-    if (d.lucDieu.meaning) {
-      this._addSection(this._leftCol, `Lục Diệu — ${d.lucDieu.name}`, d.lucDieu.meaning);
+    if (d.lucDieu.advice) {
+      this._addSection(this._leftCol, `Lục Diệu — ${d.lucDieu.name}`, d.lucDieu.advice);
     }
 
     // Sao 28
@@ -187,8 +187,8 @@ class AmLichIndicator extends PanelMenu.Button {
     this._addSection(this._leftCol, `Sao ${d.sao28.name}`, saoText.trim());
 
     // Trực
-    let trucText = d.kienTru.meaning || '';
-    if (d.kienTru.nenLam) trucText += `\n✓ Nên: ${d.kienTru.nenLam}`;
+    let trucText = '';
+    if (d.kienTru.nenLam) trucText += `✓ Nên: ${d.kienTru.nenLam}`;
     if (d.kienTru.khongNen) trucText += `\n✗ Kỵ: ${d.kienTru.khongNen}`;
     this._addSection(this._leftCol, `Trực ${d.kienTru.name}`, trucText.trim());
   }
